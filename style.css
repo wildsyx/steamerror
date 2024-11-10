@@ -1,0 +1,113 @@
+/* Animated gradient background */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #333, #888);
+    background-size: 400% 400%;
+    color: #fff;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Keyframes for background animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;  /* Moves content down from the top */
+}
+
+/* Main title */
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Changing text with typing animation */
+h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #fff;
+    width: fit-content;
+    margin: auto;
+    animation: typing 1.5s steps(20) infinite alternate;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+/* Button styling */
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #357abd;
+}
+
+/* Contact links styling */
+.contact-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer section at the bottom of the page */
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.discord-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5865F2; /* Discord color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.discord-btn:hover {
+    background-color: #4854c9;
+}
